@@ -25,6 +25,7 @@ import weeklyReviewRoutes from './routes/weeklyReview.js'
 import clawdbotRoutes from './routes/clawdbot.js'
 import filesRoutes from './routes/files.js'
 import memoryRoutes from './routes/memory.js'
+import missionControlRoutes from './routes/missionControl.js'
 
 // Import middleware
 import { apiKeyAuth, identifyClient } from './middleware/apiAuth.js'
@@ -82,6 +83,7 @@ app.use('/api/v1/files', filesRoutes)
 
 // AI Memory API (for Ace and other AI assistants)
 app.use('/api/v1/memory', memoryRoutes)
+app.use('/api/projects/mission-control', missionControlRoutes)
 
 // Root route - API info
 app.get('/', (req, res) => {

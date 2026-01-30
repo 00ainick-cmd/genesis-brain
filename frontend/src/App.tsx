@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Layout } from './components/Layout';
 import { Dashboard } from './pages/Dashboard';
 import { Actions } from './pages/Actions';
+import { Projects } from './pages/Projects';
 import { MemoryView } from './pages/Memory';
 import { CRM } from './pages/CRM';
 
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Dashboard />} />
           <Route path="actions" element={<Actions />} />
+          <Route path="projects" element={<Projects />} />
           <Route path="memory" element={<MemoryView />} />
           <Route path="crm" element={<CRM />} />
         </Route>

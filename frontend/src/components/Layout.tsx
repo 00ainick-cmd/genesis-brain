@@ -7,12 +7,14 @@ import {
   Users, 
   Menu, 
   X,
-  Terminal
+  Terminal,
+  Target
 } from 'lucide-react';
 
 const navItems = [
   { to: '/', icon: LayoutDashboard, label: 'Dashboard' },
   { to: '/actions', icon: CheckSquare, label: 'Actions' },
+  { to: '/projects', icon: Target, label: 'Projects' },
   { to: '/memory', icon: Brain, label: 'Memory' },
   { to: '/crm', icon: Users, label: 'CRM' },
 ];
